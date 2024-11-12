@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <div class="container  bg-secondary">
+    <div class="container  bg-secondary bg-gradient">
         
         <div class="row" >
-            <div class="col align-self-center"><h1>EL OSO PANDA</h1></div>
-            <div class="col-md-4 ms-auto"> <img id="Ilogo" src="Imagenes/Oso.jpg" alt="PANDA" width="400px">
+            <div class="col align-self-center"><h1 class="display-1">EL OSO PANDA</h1></div>
+            <div class="col-md-4 ms-auto"> <img src="Imagenes/Oso.jpg"  class="img-thumbnail"  alt="PANDA">
         </div>
             
         
@@ -24,7 +24,7 @@
         <div class="row">
             <div class="clearfix">
         
-                <p>
+                <p class="lead">
                     El panda gigante es una de las especies más queridas del planeta. Además, su imagen es el símbolo de lucha
                     por la conservación de WWF desde 1961. El logo de WWF, el oso panda, fue diseñado en 1961 por el primer
                     presidente de la organización, el naturalista y pintor Sir Peter Scott. WWF viene apoyando de forma activa
@@ -32,7 +32,7 @@
                     y sus colegas chinos realizados en la reserva natural de Wolong. Fuimos la primera organización
                     internacional invitada por China para trabajar sobre el terreno
                 </p>
-                <p>
+                <p class="lead">
                     Menos de 2.000 ejemplares en libertad. La población de pandas salvajes, según el último censo del Gobierno
                 chino en 2015, ha crecido en 268 ejemplares en la última década. Con este aumento de un 16,3% respecto al
                 último censo de 2003, ya hay un total de 1.864 pandas en libertad.
@@ -42,8 +42,8 @@
             
         </div>
 
-        <div class="lista">
-            <ul id="lis"  title="lista" style="list-style-type: square;">
+        <div>
+            <ul  class="list-unstyled">
                 <img id="Imgl" src="Imagenes/58.jpg" width="200px">
                 <h2>Principales características y curiosidades sobre los pandas</h2>
                 <li>Día Internacional del Panda Gigante: 27 de octubre</li>
@@ -98,37 +98,19 @@
                     </tbody>
                 </table>
             </div>
-    
-            <div class="col">
-                <h4>Escribenos un Bonito mensaje </h4>
-    
-                <form action="">
-                    <img id="fpanda"  src="Imagenes/Panda.jpg" alt="" width="200px"> <br>
-    
-                    <label for="Pc">Nombre y apellido:</label><br>
-                    <input type="text" name="Pc" placeholder="Escribe tu nombre completo"><br>
-                    <label for="B">Mensaje:</label><br>
-                    <textarea type="textarea" name="mensaje" placeholder="Escribe un mesaje para el oso panda" rows="15" cols="100" ></textarea><br>
-                    <div>
-                        <br>
-                        <button type="submit" onclick="alert('Recibimos tu mensaje con Exito gracias ...')"> Enviar</button>
-                    </div>
-                    <div>
-                        <br>
-                        <button type="reset"> Borrar Mensaje</button>
-    
-                    </div>
-                </form>
-    
-    
-            </div>
-
-
-
-
-
-
         </div>
+    
+        
+        <form action="">
+            <div class="hstack gap-3">
+                <h4>Escribenos</h4>
+                <input class="form-control me-auto" type="text" placeholder="Enviale un mensaje al panda.." >
+                <button type="submit" class="btn btn-success">Enviar</button>
+                <div class="vr"></div>
+                <button type="reset" class="btn btn-outline-danger">Reiniciar</button>
+                
+            </div>
+        </form>
     </div>
 </body>
 
