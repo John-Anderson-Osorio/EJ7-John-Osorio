@@ -15,14 +15,14 @@
     <div class="container  bg-secondary bg-gradient">
         
         <div class="row" >
-            <div class="col align-self-center"><h1 class="display-1">EL OSO PANDA</h1></div>
+            <div class="col align-self-center"><h1 class="display-1 text-uppercase">EL OSO PANDA</h1></div>
             <div class="col-md-4 ms-auto"> <img src="Imagenes/Oso.jpg"  class="img-thumbnail"  alt="PANDA">
         </div>
             
         
 
         <div class="row">
-            <div class="clearfix">
+            <div class="col clearfix">
         
                 <p class="lead">
                     El panda gigante es una de las especies más queridas del planeta. Además, su imagen es el símbolo de lucha
@@ -42,10 +42,10 @@
             
         </div>
 
-        <div>
-            <ul  class="list-unstyled">
-                <img id="Imgl" src="Imagenes/58.jpg" width="200px">
-                <h2>Principales características y curiosidades sobre los pandas</h2>
+        <div class="shadow-lg p-3 mb-5 bg-body bg-opacity-50 rounded">
+            <ul  class="col list-unstyled">
+                <img  src="Imagenes/58.jpg" class="rounded-circle" width="230px">
+                <h2 class="text-capitalize">Principales características y curiosidades sobre los pandas</h2>
                 <li>Día Internacional del Panda Gigante: 27 de octubre</li>
                 <li>Nombre científico: Ailuropoda melanoleuca.</li>
                 <li>Un panda adulto puede llegar a pesar hasta 150 kg, siendo los machos un 10% mayores y un 20% más pesados
@@ -55,6 +55,9 @@
 
             </ul>
         </div>
+
+
+    
 
         <div class="row">
             <div class="col">
@@ -100,17 +103,39 @@
             </div>
         </div>
     
-        
-        <form action="">
-            <div class="hstack gap-3">
-                <h4>Escribenos</h4>
-                <input class="form-control me-auto" type="text" placeholder="Enviale un mensaje al panda.." >
-                <button type="submit" class="btn btn-success">Enviar</button>
-                <div class="vr"></div>
-                <button type="reset" class="btn btn-outline-danger">Reiniciar</button>
-                
+        <div class="row align-items-center">
+            <form class="col  align-self-center"  action="">
+                <div class="col hstack gap-3">
+                    <h4>Escribenos</h4>
+                    <input class="form-control me-auto" type="text" placeholder="Enviale un mensaje al panda.." >
+                    <button type="submit" class="btn btn-outline-success">Enviar</button>
+                    <div class="vr"></div>
+                    <button type="reset" class="btn btn-outline-danger">Reiniciar</button>
+                    
+                </div>
+            </form>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col align-self-center">
+                <div id="carouselExampleSlidesOnly" class="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                        <img src="/Imagenes/F.png" class="d-block w-20 rounded-4" alt="...">
+                    </div>
+                        <div class="carousel-item ">
+                        <img src="/Imagenes/Pa.png" class="d-block w-20 rounded-4" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Imagenes/Iparrafo.png" class="d-block w-20 rounded-4" alt="...">
+                    </div>
+                    </div>
+                </div>
             </div>
-        </form>
+        </div>
+
+
+
     </div>
 </body>
 
