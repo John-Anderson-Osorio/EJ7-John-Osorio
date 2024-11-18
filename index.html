@@ -8,6 +8,7 @@
     <title>Mi pagina</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
@@ -56,52 +57,49 @@
             </ul>
         </div>
 
-
-    
-
         <div class="row">
-            <div class="col">
-                <table border="10">
-                    <caption>
-                        <b>Paginas de Consulta  </b>
-                    </caption>
-            
-                    <tr>
-                        <th>Paginas</th>
-                        <th>URL</th>
-                        
-                    </tr>   
-                    
-                    <tbody>
-                        <tr>
-                            <td>WWF</td>
-                            <td>
-                                <a href="https://www.wwf.es/nuestro_trabajo/especies_y_habitats/oso_panda_/" target="_blank" > https://www.wwf.es/nuestro_trabajo/especies_y_habitats/oso_panda_/</a>
-                            </td>
-                        
-                        </tr>
-                        
-                        <tr>
-                            <td>Naturalista CO</td>
-                            <td>
-                                <a href="https://colombia.inaturalist.org/taxa/41659-Ailuropoda-melanoleuca" target="_blank">https://colombia.inaturalist.org/taxa/41659-Ailuropoda-melanoleuca</a>
-                            </td>
-            
+            <button class="col btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Enlaces externos</button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Paginas de Consulta </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <table >
+                            <tr>
+                                <th>Enlaces a una dirección Web</th>
+                            </tr>   
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="https://www.wwf.es/nuestro_trabajo/especies_y_habitats/oso_panda_/" target="_blank" > WWF</a>
+                                        </td>
+                                        
+                                    </tr>
+                                        
+                                        <tr>
+                                            
+                                            <td>
+                                                <a href="https://colombia.inaturalist.org/taxa/41659-Ailuropoda-melanoleuca" target="_blank">Naturalista CO</a>
+                                            </td>
                             
-                        </tr>
-            
-                        <tr>
-                            <td>Zoo Aquarium</td>
-                            <td>
-                                <a href="https://www.zoomadrid.com/animales-y-continentes/animales/panda-gigante" target="_blank">https://www.zoomadrid.com/animales-y-continentes/animales/panda-gigante</a>
-                            </td>
-                        
-                        </tr>
-            
-                    </tbody>
-                </table>
-            </div>
+                                            
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                <a href="https://www.zoomadrid.com/animales-y-continentes/animales/panda-gigante" target="_blank">Zoo Aquarium</a>
+                                            </td>
+                                        
+                                        </tr>
+                            
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
         </div>
+
+        
     
         <div class="row align-items-center">
             <form class="col  align-self-center"  action="">
@@ -116,8 +114,8 @@
             </form>
         </div>
 
-        <div class="row align-items-center">
-            <div class="col align-self-center">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
                 <div id="carouselExampleSlidesOnly" class="carousel" data-bs-ride="carousel">
                     <div class="carousel-inner ">
                         <div class="carousel-item active">
