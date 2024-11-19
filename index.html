@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- DATOS INTERNOS  -->
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -12,15 +12,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
+<!-- Programa principal  -->
+
 <body>
+
+    <!-- Contenedor Principal -->
+
     <div class="container  bg-secondary bg-gradient">
         
+    <!-- Titulo e Imagen  -->
+
         <div class="row" >
             <div class="col align-self-center"><h1 class="display-1 text-uppercase">EL OSO PANDA</h1></div>
             <div class="col-md-4 ms-auto"> <img src="Imagenes/Oso.jpg"  class="img-thumbnail"  alt="PANDA">
         </div>
             
-        
+    <!-- Parrafos y contenido-->
 
         <div class="row">
             <div class="col clearfix">
@@ -43,6 +50,8 @@
             
         </div>
 
+    <!-- Tarjeta -->
+
         <div class="shadow-lg p-3 mb-5 bg-body bg-opacity-50 rounded">
             <ul  class="col list-unstyled">
                 <img  src="Imagenes/58.jpg" class="rounded-circle" width="230px">
@@ -56,6 +65,8 @@
 
             </ul>
         </div>
+
+    <!--Offcanvas -->
 
         <div class="row">
             <button class="col btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Enlaces externos</button>
@@ -99,41 +110,63 @@
                 </div>
         </div>
 
-        
-    
-        <div class="row align-items-center">
-            <form class="col  align-self-center"  action="">
-                <div class="col hstack gap-3">
-                    <h4>Escribenos</h4>
-                    <input class="form-control me-auto" type="text" placeholder="Enviale un mensaje al panda.." >
-                    <button type="submit" class="btn btn-outline-success">Enviar</button>
-                    <div class="vr"></div>
-                    <div class="vr"></div>
-                    <button type="reset" class="btn btn-outline-danger">Reiniciar</button>
-                    
+    <!-- Modal    -->
+
+        <div class="row">
+            
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Enviale un mensaje a los Pandas</button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Mensaje</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Tu Nombre:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Escribe tu Mensaje:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-outline-success">Enviar</button>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-            </form>
         </div>
+        
+    <!-- Carrusel de imagenes -->
 
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <div id="carouselExampleSlidesOnly" class="carousel" data-bs-ride="carousel">
                     <div class="carousel-inner ">
                         <div class="carousel-item active">
-                        <img src="/Imagenes/F.png" class="d-block w-20 rounded-4" alt="...">
-                    </div>
+                            <img src="/Imagenes/F.png" class="d-block w-20 rounded-4" alt="...">
+                        </div>
                         <div class="carousel-item ">
-                        <img src="/Imagenes/Pa.png" class="d-block w-20 rounded-4" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/Imagenes/Iparrafo.png" class="d-block w-20 rounded-4" alt="...">
-                    </div>
+                            <img src="/Imagenes/Pa.png" class="d-block w-20 rounded-4" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/Imagenes/Iparrafo.png" class="d-block w-20 rounded-4" alt="...">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <nav class="navbar bg-body-tertiary">
+    <!-- Barra de Navegacion  -->
+
+        <nav class="navbar  bg-success-subtle">
             <div class="container">
                 <a class="navbar-brand" href="https://www.google.com/?hl=es" target="_blank">
                     <img src="/Imagenes/cromo.png" alt="Chrome" width="30" height="24">
